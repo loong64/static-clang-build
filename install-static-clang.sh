@@ -77,6 +77,7 @@ ln -s clang "${TOOLCHAIN_PATH}/bin/cc"
 ln -s clang-cpp "${TOOLCHAIN_PATH}/bin/cpp"
 ln -s clang++ "${TOOLCHAIN_PATH}/bin/g++"
 ln -s clang++ "${TOOLCHAIN_PATH}/bin/c++"
+ln -s lld "${TOOLCHAIN_PATH}/bin/ld"
 popd
 
 cat<<EOF >"${TOOLCHAIN_PATH}/bin/${AUDITWHEEL_PLAT}.cfg"
