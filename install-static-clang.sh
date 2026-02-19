@@ -41,7 +41,7 @@ tar -C /opt -xf "${STATIC_CLANG_FILENAME}"
 popd
 
 # configure target triple
-DEFAULT_POLICY="manylinux_2_28"
+DEFAULT_POLICY="manylinux_2_38"
 if ldd /bin/ls 2>&1 | grep -q 'musl'; then
 	DEFAULT_POLICY="musllinux_1_2"
 fi
